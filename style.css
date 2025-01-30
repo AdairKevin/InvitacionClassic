@@ -75,12 +75,9 @@ html {
   width: 50%;
   height: 100%;
   background-color: #f7f2e5;
-  transition: transform 0.5s ease;
+  transition: transform 0.7s ease;
   box-shadow: 2px 0 5px rgb(0, 0, 0);
-
-  opacity: 1;
-  background-image: radial-gradient(#e4bb85 0.45px, #fff7e1 0.45px);
-  background-size: 9px 9px;
+  background-image: url("assets/texture-f5af94d3.png");
 }
 
 .puerta.izquierda {
@@ -91,7 +88,7 @@ html {
 .puerta.derecha {
   right: 0;
   transform-origin: right;
-  box-shadow: -4px 0 5px rgba(0, 0, 0, 0.3); /* Sombra entre las puertas */
+  box-shadow: -7px 0 8px rgba(0, 0, 0, 0.3); /* Sombra entre las puertas */
 }
 
 .envelope.abierto .puerta.izquierda {
