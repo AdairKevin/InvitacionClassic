@@ -284,12 +284,6 @@ td span {
   box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2); /* Sombra rosa */
 }
 
-/* Estilos para las imágenes del carrusel */
-.carousel-inner {
-  width: 100%;
-  height: 100%;
-}
-
 .carousel-item {
   width: 100%;
   height: 100%;
@@ -297,8 +291,6 @@ td span {
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
   object-fit: cover; /* Recortar la imagen sin distorsionar */
 }
 
