@@ -227,6 +227,39 @@ td span {
   gap: 20px;
 }
 
+.padres {
+  view-timeline-name: --container;
+  view-timeline-axis: block;
+  animation-timeline: --container;
+  animation-name: cardAnimacionI;
+}
+
+.padrinos {
+  view-timeline-name: --container;
+  view-timeline-axis: block;
+  animation-timeline: --container;
+  animation-name: cardAnimacionD;
+}
+
+@keyframes cardAnimacionI {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  65% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardAnimacionD {
+  0% {
+    transform: translateX(500px);
+  }
+
+  60% {
+    transform: translateX(0);
+  }
+}
 .padres,
 .padrinos {
   width: 90%;
@@ -281,6 +314,11 @@ td span {
   overflow: hidden; /* Recortar el exceso */
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2); /* Sombra rosa */
+
+  view-timeline-name: --container;
+  view-timeline-axis: block;
+  animation-timeline: --container;
+  animation-name: cardAnimacionI;
 }
 
 .carousel-item {
@@ -300,9 +338,9 @@ td span {
 
 .intinerario {
   margin-top: 10%;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
-  font-family: "Italiana" serif;
+  font-family: "League Script", serif;
 }
 
 .card {
@@ -435,4 +473,71 @@ td span {
   text-align: center;
   color: #fdf7e5;
   font-family: "Italiana", serif;
+
+  view-timeline-name: --container;
+  view-timeline-axis: block;
+  animation-timeline: --container;
+
+  animation-name: izquierda;
+  opacity: 0;
+}
+
+@keyframes izquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.codigo__vestimenta {
+  width: 100%;
+  padding: 20px;
+  background-color: #ff45a8;
+  text-align: center;
+  color: #fdf7e5;
+  font-family: "Italiana", serif;
+
+  view-timeline-name: --container;
+  view-timeline-axis: block;
+  animation-timeline: --container;
+  animation-name: derecha;
+  opacity: 0;
+}
+
+@keyframes derecha {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+
+  35% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.confirmar {
+  padding: 20px;
+  margin-top: 5%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.confirmar span {
+  font-family: "League Script", serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.confirmarBtn {
+  border: none;
+  padding: 10px 15px;
+  background: #ff45a8;
+  border-radius: 5px;
+  font-family: "Italiana", serif;
+  color: #fdf7e5;
 }
